@@ -12,6 +12,10 @@ import { MapsComponent } from '../../pages/maps/maps.component';
 import { UserProfileComponent } from '../../pages/user-profile/user-profile.component';
 import { TablesComponent } from '../../pages/tables/tables.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { MutuarioDetailsComponent } from '../../pages/mutuario-details/mutuario-details.component';
+import { CreateMutuarioComponent } from '../../pages/create-mutuario/create-mutuario.component';
+import { MutuarioListComponent } from '../../pages/mutuario-list/mutuario-list.component';
+import { UpdateMutuarioComponent } from '../../pages/update-mutuario/update-mutuario.component';
 // import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
@@ -21,14 +25,19 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     FormsModule,
     HttpClientModule,
     NgbModule,
-    ClipboardModule
+    ClipboardModule, 
+    
   ],
   declarations: [
     DashboardComponent,
     UserProfileComponent,
     TablesComponent,
     IconsComponent,
-    MapsComponent
+    MapsComponent,
+    MutuarioListComponent,
+    CreateMutuarioComponent,
+    UpdateMutuarioComponent,
+    MutuarioDetailsComponent
   ]
 })
 

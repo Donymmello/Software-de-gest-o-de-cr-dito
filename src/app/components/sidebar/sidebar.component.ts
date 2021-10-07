@@ -11,7 +11,7 @@ export const ROUTES: RouteInfo[] = [
     {path: '/icons', title: 'Início',  icon: 'ni-tv-2 text-black', class: '' },
     // {path: '/login', title: 'Login',  icon:'ni ni-key-25 text-black', class: '' },
     // {path: '/register', title: 'Register',  icon:'ni ni-circle-08 text-black', class: '' },
-    {path: '/tables', title: 'Listas', icon: 'ni ni-collection text-black', class: ''},
+    //{path: '/tables', title: 'Listas', icon: 'ni ni-collection text-black', class: ''},
     {path: '/mutuario-list', title: 'Lista de mutuarios', icon: 'ni ni-collection text-black', class: ''},
     {path: '/maps', title: 'Gestão', icon: 'ni ni-chart-bar-32 text-black', class: ''},
     {path: '/dashboard', title: 'Relatórios', icon: 'ni ni-ruler-pencil text-black', class: ''},

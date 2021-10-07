@@ -1,0 +1,32 @@
+<div class="col-md-6 offset-md-3">
+    <h3> Criar Mutuario </h3>
+    <form (ngSubmit)="onSubmit()">
+    
+        <div class="form-group">
+            <label> Nome</label>
+            <input type="text" class ="form-control" id = "Nome"
+                [(ngModel)] = "mutuario.nome" name = "nome">
+        </div>
+    
+        <div class="form-group">
+            <label> Nuit</label>
+            <input type="text" class ="form-control" id = "Nuit"
+                [(ngModel)] = "mutuario.nuit" name = "nuit">
+        </div>
+    
+        <div class="form-group">
+            <label> BilheteIdentidade</label>
+            <input type="text" class ="form-control" id = "BilheteIdentidade"
+                [(ngModel)] = "mutuario.bilheteIdentidade" name = "bilheteIdentidade">
+        </div>
+
+        <div class="form-group">
+            <label> Morada</label>
+            <input type="text" class ="form-control" id = "Morada"
+                [(ngModel)] = "mutuario.morada" name = "morada">
+        </div>
+    
+        <button class = "btn btn-success" type ="submit">Submit</button>
+    
+    </form>
+    </div> 
