@@ -48,39 +48,36 @@
       <div class="col">
         <div class="card shadow">
           <div class="card-header border-0">
-            <h3 class="mb-0">Lista de Mutuarios</h3>
-            <a routerLinkActive= "active" [routerLink]="['/create-mutuario']">
+            <h3 class="mb-0">Lista de Utilizadores</h3>
+            <a routerLinkActive= "active" [routerLink]="['/create-utilizador']">
               <button type="button" classe="text-center btn bnt-sucess mt-5" style="bottom: 2rem !important; border-radius: 2rem !important; position: relative;">
                 +Add
               </button>
             </a>
-          </div>
+            </div>
+          
           <div class="table-responsive">
             <table class="table align-items-center table-flush">
               <thead class="thead-light">
                 <tr>
                   <!--th scope="col"> Ordem</th -->
                   <th scope="col"> Nome Completo</th>
-                  <th scope="col"> Genero</th>
-                  <th scope="col"> Nascimento</th>
-                  <th scope="col"> Nuit</th>
-                  <th scope="col"> Bilhete de Identidade</th>
-                  <th scope="col"> Morada</th>
+                  <th scope="col"> Nome de Utlizador</th>
+                  <th scope="col"> Email</th>
+                  <th scope="col"> Tipo</th>
                   <th scope="col"> Ação</th>
                 </tr>
               </thead>
               <tbody>
-                <tr *ngFor = "let mutuario of mutuarios" >
-                    <td> {{ mutuario.nome}}</td>
-                    <td> {{ mutuario.genero}}</td>
-                    <td> {{ mutuario.nascimento}}</td>
-                    <td> {{ mutuario.nuit}}</td>
-                    <td> {{ mutuario.bilheteIdentidade}}</td>
-                    <td> {{ mutuario.morada}}</td>
+                <tr *ngFor = "let utilizador of utilizadores" >
+                    <td> {{ utilizador.nome}}</td>
+                    <td> {{ utilizador.username}}</td>
+                    <td> {{ utilizador.email}}</td>
+                    <td> {{ utilizador.tipo}}</td>
                     <td>
-                        <button (click) = "updateMutuario(mutuario.id)" class = "btn btn-info">Editar</button>
-                        <button (click) = "deleteMutuario(mutuario.id)" class = "btn btn-danger" style="margin-left: 10px">Apagar</button>
-                        <button (click) = "mutuarioDetails(mutuario.id)" class = "btn btn-info" style="margin-left: 10px"> Ver</button>
+                        <button (click) = "updateUtilizador(utilizador.id)" class = "btn btn-info">Editar</button>
+                        <button (click) = "deleteUtilizador(utilizador.id)" class = "btn btn-danger" style="margin-left: 10px">Apagar</button>
+                        <button (click) = "utilizadorDetails(utilizador.id)" class = "btn btn-info" style="margin-left: 10px">Ver</button>
                     </td>
                 </tr>
             </tbody>
@@ -90,4 +87,5 @@
       </div>
     </div>
   </div>
+
   

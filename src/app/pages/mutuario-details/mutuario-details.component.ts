@@ -1,7 +1,7 @@
 import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit } from "@angular/core";
-import { Mutuario } from "./../../mutuario";
-import { MutuarioService } from './../../mutuario.service';
+import { Mutuario } from "../../mutuario";
+import { MutuarioService } from 'src/app/services/mutuario.service';
 
 @Component({
     selector: 'app-mutuario-details',

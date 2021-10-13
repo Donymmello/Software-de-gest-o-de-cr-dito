@@ -41,50 +41,21 @@
       </div>
     </div>
   </div>
-<div class="col-md-6 offset-md-3">
-    <h3> Criar Mutuario </h3>
-    <form (ngSubmit)="onSubmit()">
-    
-        <div class="form-group">
-            <label> Nome</label>
-            <input type="text" class ="form-control" id = "Nome"
-                [(ngModel)] = "mutuario.nome" name = "nome">
-        </div>
-        
-        <div class="form-group">
-          <label> Genero</label>
-          <select class ="form-control" id = "genero"
-              [(ngModel)] = "mutuario.genero" name = "genero">
-              <option value="Masculino">Masculino</option>
-              <option value="Femenino">Femenino</option>
-          </select>
+  <h3> Detalhes do utilizador</h3>
+  <div>
+      <div>
+          <label> <b> Nome: </b></label> {{utilizador.nome}}
       </div>
-
-        <div class="form-group">
-            <label> Nascimento</label>
-            <input type="date" class ="form-control" id = "Nascimento"
-                [(ngModel)] = "mutuario.nascimento" name = "nascimento">
-        </div>
-    
-        <div class="form-group">
-            <label> Nuit</label>
-            <input type="text" class ="form-control" id = "Nuit"
-                [(ngModel)] = "mutuario.nuit" name = "nuit">
-        </div>
-    
-        <div class="form-group">
-            <label> Bilhete de Identidade</label>
-            <input type="text" class ="form-control" id = "BilheteIdentidade"
-                [(ngModel)] = "mutuario.bilheteIdentidade" name = "bilheteIdentidade">
-        </div>
-
-        <div class="form-group">
-            <label> Morada</label>
-            <input type="text" class ="form-control" id = "Morada"
-                [(ngModel)] = "mutuario.morada" name = "morada">
-        </div>
-    
-        <button class = "btn btn-success" type ="submit">Submeter</button>
-    
-    </form>
-    </div> 
+      <div>
+          <label> <b> Username: </b></label> {{utilizador.username}}
+      </div>
+      <div>
+          <label> <b> Email: </b></label> {{utilizador.email}}
+      </div>
+      <!--div>
+          <label> <b> Morada: </b></label> {{mutuario.morada}}
+      </div-->
+  </div>
+  
+  
+  

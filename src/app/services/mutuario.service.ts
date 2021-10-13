@@ -1,7 +1,7 @@
+import { Mutuario } from 'src/app/mutuario';
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { Mutuario } from './mutuario';
 
 @Injectable({
   providedIn: 'root'

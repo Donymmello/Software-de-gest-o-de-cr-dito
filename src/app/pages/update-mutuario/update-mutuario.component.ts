@@ -1,7 +1,7 @@
+import { MutuarioService } from 'src/app/services/mutuario.service';
 import { Component, OnInit } from "@angular/core";
 import { ActivatedRoute, Router } from "@angular/router";
-import { Mutuario } from "./../../mutuario";
-import { MutuarioService } from "./../../mutuario.service";
+import { Mutuario } from "../../mutuario";
 
 @Component({
     selector: 'app-update-mutuario',
@@ -32,6 +32,6 @@ import { MutuarioService } from "./../../mutuario.service";
     }
   
     goToMutuarioList(){
-      this.router.navigate(['/mutuarios']);
+      this.router.navigate(['/mutuario-list']);
     }
   }

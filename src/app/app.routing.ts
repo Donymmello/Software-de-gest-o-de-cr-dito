@@ -5,10 +5,6 @@ import { Routes, RouterModule } from '@angular/router';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component';
-import { MutuarioListComponent } from './pages/mutuario-list/mutuario-list.component';
-import { CreateMutuarioComponent } from './pages/create-mutuario/create-mutuario.component';
-import { UpdateMutuarioComponent } from './pages/update-mutuario/update-mutuario.component';
-import { MutuarioDetailsComponent } from './pages/mutuario-details/mutuario-details.component';
 
 const routes: Routes =[
   {path: '', 
@@ -34,7 +30,7 @@ const routes: Routes =[
   }, {
     path: '**',
     redirectTo: 'dashboard'
-  } 
+  }
 ];
 
 @NgModule({

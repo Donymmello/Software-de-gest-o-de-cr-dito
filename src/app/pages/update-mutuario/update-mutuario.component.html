@@ -50,6 +50,21 @@
             <input type="text" class ="form-control" id = "nome"
                 [(ngModel)] = "mutuario.nome" name = "nome">
         </div>
+
+        <div class="form-group">
+          <label> Genero</label>
+          <select class ="form-control" id = "genero"
+              [(ngModel)] = "mutuario.genero" name = "genero">
+              <option value="Masculino">Masculino</option>
+              <option value="Femenino">Femenino</option>
+          </select>
+      </div>
+
+        <div class="form-group">
+          <label> Nascimento</label>
+          <input type="date" class ="form-control" id = "Nascimento"
+              [(ngModel)] = "mutuario.nascimento" name = "nascimento">
+      </div>
     
         <div class="form-group">
             <label> Nuit</label>
@@ -69,7 +84,7 @@
                 [(ngModel)] = "mutuario.morada" name = "morada">
         </div>
     
-        <button class = "btn btn-success" type ="submit">Submit</button>
+        <button class = "btn btn-success" type ="submit">Submeter</button>
     
     </form>
     </div> 
