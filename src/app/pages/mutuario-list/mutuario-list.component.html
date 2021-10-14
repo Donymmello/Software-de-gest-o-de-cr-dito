@@ -1,46 +1,10 @@
 <div class="header bg-gradient-success pb-8 pt-5 pt-md-8">
-    <div class="container-fluid">
-      <div class="header-body">
+  <div class="container-fluid">
+    <div class="header-body">
         <!-- Card stats -->
-        <div class="row">
-          <div class="col-xl-6 col-lg-6">
-            <div class="card card-stats mb-4 mb-xl-0">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col">
-                    <h5 class="card-title text-uppercase text-muted mb-0">Mutuários</h5>
-                    <span class="h2 font-weight-bold mb-0">4</span>
-                  </div>
-                  <div class="col-auto">
-                    <div class="icon icon-shape bg-gradient-success text-white rounded-circle shadow">
-                      <i class="fas fa-chart-bar"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-xl-6 col-lg-6">
-            <div class="card card-stats mb-4 mb-xl-0">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col">
-                    <h5 class="card-title text-uppercase text-muted mb-0">Pendentes</h5>
-                    <span class="h2 font-weight-bold mb-0">2</span>
-                  </div>
-                  <div class="col-auto">
-                    <div class="icon icon-shape bg-gradient-success text-white rounded-circle shadow">
-                      <i class="fas fa-chart-pie"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
+</div>
    <!-- Tabela de Utilizadores  -->
    <div class="container-fluid mt--7">
     <!-- Table  -->
@@ -49,11 +13,6 @@
         <div class="card shadow">
           <div class="card-header border-0">
             <h3 class="mb-0">Lista de Mutuarios</h3>
-            <a routerLinkActive= "active" [routerLink]="['/create-mutuario']">
-              <button type="button" classe="text-center btn bnt-sucess mt-5" style="bottom: 2rem !important; border-radius: 2rem !important; position: relative;">
-                +Add
-              </button>
-            </a>
           </div>
           <div class="table-responsive">
             <table class="table align-items-center table-flush">
@@ -63,10 +22,17 @@
                   <th scope="col"> Nome Completo</th>
                   <th scope="col"> Genero</th>
                   <th scope="col"> Nascimento</th>
-                  <th scope="col"> Nuit</th>
+                  <!-- <th scope="col"> Nuit</th> -->
                   <th scope="col"> Bilhete de Identidade</th>
                   <th scope="col"> Morada</th>
                   <th scope="col"> Ação</th>
+                  <th>
+                    <a routerLinkActive= "active" [routerLink]="['/create-mutuario']">
+                      <button type="button" classe="text-center btn bnt-sucess mt-5" style="bottom: 2rem !important; border-radius: 2rem !important;">
+                        +Add
+                      </button>
+                    </a>
+                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -74,13 +40,16 @@
                     <td> {{ mutuario.nome}}</td>
                     <td> {{ mutuario.genero}}</td>
                     <td> {{ mutuario.nascimento}}</td>
-                    <td> {{ mutuario.nuit}}</td>
+                    <!-- <td> {{ mutuario.nuit}}</td> -->
                     <td> {{ mutuario.bilheteIdentidade}}</td>
                     <td> {{ mutuario.morada}}</td>
                     <td>
-                        <button (click) = "updateMutuario(mutuario.id)" class = "btn btn-info">Editar</button>
-                        <button (click) = "deleteMutuario(mutuario.id)" class = "btn btn-danger" style="margin-left: 10px">Apagar</button>
-                        <button (click) = "mutuarioDetails(mutuario.id)" class = "btn btn-info" style="margin-left: 10px"> Ver</button>
+                        <a class="btn text-success" (click)="updateMutuario(mutuario.id)"><i class="ni ni-cloud-upload-96"></i></a>
+                        <a class="btn text-danger" (click)="deleteMutuario(mutuario.id)"><i class="ni ni-fat-remove"></i></a>
+                        <a class="btn text-info" (click)="mutuarioDetails(mutuario.id)"><i class="ni ni-bullet-list-67"></i></a>
+                        <!-- <button (click) = "updateMutuario(mutuario.id)" class = "btn btn-info">Editar</button> -->
+                        <!-- <button (click) = "deleteMutuario(mutuario.id)" class = "btn btn-danger" style="margin-left: 10px">Apagar</button> -->
+                        <!-- <button (click) = "mutuarioDetails(mutuario.id)" class = "btn btn-info" style="margin-left: 10px"> Ver</button> -->
                     </td>
                 </tr>
             </tbody>

@@ -25,7 +25,11 @@ import { Router } from '@angular/router';
           this.utilizadores = data;
         });
       }
-      utilizadorDetails(id: number){
+      utilizadorDetails(id: any){
+        console.log('Teste');
+        
+        console.log(id);
+        
         this.router.navigate(['utilizador-details', id]);
       }
     
